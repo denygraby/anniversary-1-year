@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    }
+
+body {
+margin: 0;
+min-height: 100vh;
+padding: 25px 14px;
+background: #100b15;
+color: #f9eaf3;
+font-family: monospace;
+}
+
+.page {
+width: 100%;
+max-width: 520px;
+margin: 0 auto;
+}
+
+.window {
+overflow: hidden;
+border: 1px solid #8d456e;
+border-radius: 20px;
+background: linear-gradient(160deg, #241326, #120e1b 75%);
+box-shadow: 0 0 35px #e65a9630;
+}
+
+.bar {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+padding: 14px;
+background: #2b172b;
+border-bottom: 1px solid #633451;
+color: #ff9cc8;
+font-size: 11px;
+}
+
+.content {
+padding: 26px 20px;
+text-align: center;
+}
+
+.tag {
+color: #ff9cc8;
+font-size: 10px;
+letter-spacing: 2px;
+}
+
+.big-heart {
+margin: 24px 0;
+color: #ff6fae;
+font-size: 58px;
+animation: beat 1.2s infinite;
+text-shadow: 0 0 25px #ff438b80;
+}
+
+h1 {
+color: #ffc0dc;
+font-size: clamp(25px, 7vw, 36px);
+line-height: 1.4;
+}
+
+.sub {
+color: #cda9c1;
+font-size: 12px;
+}
+
+.line {
+height: 1px;
+margin: 25px 0;
+background: linear-gradient(90deg, transparent, #b95888, transparent);
+}
+
+.question {
+line-height: 1.8;
+}
+
+.terminal-text {
+margin: 22px 0;
+padding: 14px;
+border: 1px solid #493049;
+border-radius: 12px;
+background: #100d17;
+color: #a9f5c5;
+text-align: left;
+font-size: 12px;
+}
+
+.terminal-text p {
+line-height: 1.7;
+}
+
+button {
+width: 100%;
+padding: 16px 10px;
+border: 1px solid #ff8dbd;
+border-radius: 12px;
+background: #7d315d;
+color: white;
+font-family: monospace;
+font-size: 12px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 0 20px #ff6fae25;
+}
+
+button:active {
+transform: scale(0.98);
+}
+
+#secret[hidden] {
+display: none;
+}
+
+#secret p {
+font-size: 14px;
+line-height: 1.9;
+color: #f6dce9;
+}
+
+#secret h2 {
+color: #ff9cc8;
+line-height: 1.5;
+}
+
+#secret .special {
+padding: 16px;
+border-radius: 12px;
+background: #32192d;
+color: #ffc0dc;
+}
+
+#secret .signature {
+color: #ff9cc8;
+}
+
+#secret .end {
+color: #bda2bb;
+font-size: 11px;
+}
+
+.footer {
+color: #b58aa9;
+text-align: center;
+font-size: 11px;
+margin-top: 18px;
+}
+
+@keyframes beat {
+50% {
+transform: scale(1.13);
+}
+}
